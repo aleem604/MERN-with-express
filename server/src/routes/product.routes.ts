@@ -73,7 +73,7 @@ const router = Router();
 
 /**
  * @swagger
- * /products:
+ * /api/products:
  *   get:
  *     summary: Get all products
  *     tags: [Products]
@@ -91,7 +91,7 @@ router.get("/", getProducts);
 
 /**
  * @swagger
- * /products/{id}:
+ * /api/products/{id}:
  *   get:
  *     summary: Get product by ID
  *     tags: [Products]
@@ -116,7 +116,7 @@ router.get("/:id", getProductById);
 
 /**
  * @swagger
- * /products:
+ * /api/products:
  *   post:
  *     summary: Create a new product
  *     tags: [Products]
@@ -144,7 +144,7 @@ router.post("/", authMiddleware, createProduct);
 
 /**
  * @swagger
- * /products/{id}:
+ * /api/products/{id}:
  *   put:
  *     summary: Update an existing product
  *     tags: [Products]
@@ -183,7 +183,7 @@ router.put("/:id", authMiddleware, updateProduct);
 
 /**
  * @swagger
- * /products/{id}:
+ * /api/products/{id}:
  *   delete:
  *     summary: Delete a product
  *     tags: [Products]
